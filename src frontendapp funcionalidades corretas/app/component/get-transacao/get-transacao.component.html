@@ -1,0 +1,23 @@
+<h2 class="d-flex flex-column align-items-center">Detalhes Cliente</h2>
+
+<hr/>
+<div *ngIf="transacao" class="d-flex flex-column align-items-center">
+  <div>
+    <label><b>Id: </b></label> {{transacao.id}}
+  </div>
+  <div>
+    <label><b>Nome: </b></label> {{transacao.nome}}
+  </div>
+  <div>
+  <div>
+    <label><b>Valor: </b></label> {{transacao.valor}}
+  </div>
+  <div>
+    <label><b>Numero Conta: </b></label> {{transacao.numeroConta}}
+  </div>
+  <br/>
+  <button (click)="list()" class="btn btn-primary">Voltar para Transações</button><br>
+</div>
+
+<br>
+<app-footer></app-footer>
